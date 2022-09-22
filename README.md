@@ -2,7 +2,7 @@
 A new Flutter project testing.
 
 # newsapp
-using open api (https://newsapi.org)
+Using open api (https://newsapi.org)
 Provider State Management & Networking Http
 
 ## Getting Started
