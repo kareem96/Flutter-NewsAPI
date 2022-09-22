@@ -47,13 +47,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.indigo,
                 fontWeight: FontWeight.bold),
           ),
-          const SizedBox(
-            height: 10,
-          ),
-          const Text(
-            "News from All the world",
-            style: TextStyle(fontSize: 12, color: Colors.grey),
-          ),
+          
           const SizedBox(
             height: 16,
           ),
