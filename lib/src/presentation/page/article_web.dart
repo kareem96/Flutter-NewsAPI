@@ -5,12 +5,12 @@ import '../widgets/custom_scaffold.dart';
 
 class ArticleWebView extends StatefulWidget {
   static const routeName = '/article_web';
-  final String url;
+  final url;
   bool isLoading = true;
 
   ArticleWebView({
     Key? key,
-    required this.url,
+    this.url,
     this.isLoading = true,
   }) : super(key: key);
 

@@ -7,7 +7,7 @@ import '../../utils/state_result.dart';
 import '../providers/search_provider.dart';
 import 'article_web.dart';
 
-class SearchPage extends StatefulWidget {
+/*class SearchPage extends StatefulWidget {
   static const routeName = '/page_search';
   const SearchPage({Key? key}) : super(key: key);
 
@@ -155,4 +155,4 @@ class _SearchPageState extends State<SearchPage> {
       ),
     );
   }
-}
+}*/

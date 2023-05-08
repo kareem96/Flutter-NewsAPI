@@ -1,11 +1,14 @@
 import 'dart:convert';
 import 'package:flutter_news_api/src/data/model/news_response.dart';
+import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 
 
 class RemoteDataSource{
+  final GetConnect _connect;
   static const baseUrl = "https://newsapi.org/v2/";
   static const apiKey = "7fd3482b6c1f45f2a26c3b3c49ad1434";
+  RemoteDataSource({required GetConnect connect}): _connect = connect;
   // final Dio dio = Dio();
 
   ///GET TOP HEADLINES

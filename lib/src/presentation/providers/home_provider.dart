@@ -4,6 +4,7 @@ import 'package:flutter_news_api/src/data/remote/remote_data_source.dart';
 import 'package:flutter_news_api/src/utils/state_result.dart';
 import 'package:http/http.dart';
 
+/*
 class HomeProvider extends ChangeNotifier{
   RemoteDataSource remoteDataSource;
   HomeProvider({
@@ -41,14 +42,18 @@ class HomeProvider extends ChangeNotifier{
     }
   }
 
-  /*bool isLoading = false;
-  List<News> news = [];*/
+  */
+/*bool isLoading = false;
+  List<News> news = [];*//*
 
-  /*getTopHeadLines(context) async{
+
+  */
+/*getTopHeadLines(context) async{
     isLoading = true;
     news = await remoteDataSource.getTopHeadLines();
     isLoading = false;
 
     notifyListeners();
-  }*/
-}
+  }*//*
+
+}*/

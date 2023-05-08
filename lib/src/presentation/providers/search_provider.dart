@@ -3,6 +3,7 @@ import 'package:flutter_news_api/src/data/model/news_response.dart';
 import 'package:flutter_news_api/src/data/remote/remote_data_source.dart';
 import 'package:flutter_news_api/src/utils/state_result.dart';
 
+/*
 class SearchProvider extends ChangeNotifier{
   final RemoteDataSource remoteDataSource;
   SearchProvider({
@@ -43,13 +44,17 @@ class SearchProvider extends ChangeNotifier{
       return _message = "Error -> $e";
     }
   }
-  /*bool isLoading = false;
-  List<News> news = [];*/
-  /*getSearch(context, query) async{
+  */
+/*bool isLoading = false;
+  List<News> news = [];*//*
+
+  */
+/*getSearch(context, query) async{
     isLoading = true;
     news = await remoteDataSource.getSearch(query);
     isLoading = false;
 
     notifyListeners();
-  }*/
-}
+  }*//*
+
+}*/

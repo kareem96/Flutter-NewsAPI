@@ -8,7 +8,7 @@ import '../widgets/list_card_news.dart';
 import 'article_web.dart';
 import 'detail_page.dart';
 
-class HomePage extends StatefulWidget {
+/*class HomePage extends StatefulWidget {
   static const String routeName = "/home_page";
 
   const HomePage({Key? key}) : super(key: key);
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.indigo,
                 fontWeight: FontWeight.bold),
           ),
-          
+
           const SizedBox(
             height: 16,
           ),
@@ -140,4 +140,4 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-}
+}*/

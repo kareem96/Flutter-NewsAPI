@@ -1,31 +1,40 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_news_api/src/data/model/news.dart';
-import 'package:flutter_news_api/src/data/remote/remote_data_source.dart';
-import 'package:flutter_news_api/src/presentation/page/article_web.dart';
-import 'package:flutter_news_api/src/presentation/page/detail_page.dart';
-import 'package:flutter_news_api/src/presentation/page/home_page.dart';
-import 'package:flutter_news_api/src/presentation/page/search_page.dart';
-import 'package:flutter_news_api/src/presentation/providers/home_provider.dart';
-import 'package:flutter_news_api/src/presentation/providers/search_provider.dart';
-import 'package:flutter_news_api/src/utils/navigation.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_news_api/src/intializer.dart';
+import 'package:flutter_news_api/src/routes.dart';
+import 'package:get/get.dart';
+import 'navigation.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  /*WidgetsFlutterBinding.ensureInitialized();
   runApp(
     const MyApp(),
-  );
+  );*/
+  await Initializer.init();
+  var initialRoute = await Routes.initialRoute;
+  runApp(MyApp(initialRoute));
+}
+class MyApp extends StatelessWidget{
+  final String initialRoute;
+  MyApp(this.initialRoute);
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      initialRoute: initialRoute,
+      getPages: Nav.routes,
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }
 
-class MyApp extends StatefulWidget {
+/*class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   State<MyApp> createState() => _MyAppState();
-}
+}*/
 
-class _MyAppState extends State<MyApp> {
+/*class _MyAppState extends State<MyApp> {
   final RemoteDataSource _remoteDataSource = RemoteDataSource();
 
   // This widget is the root of your application.
@@ -63,4 +72,4 @@ class _MyAppState extends State<MyApp> {
           },
         ),
       );
-}
+}*/
